@@ -9,6 +9,15 @@ If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy.
         Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
 """
+"""
+Edits:
+import random
+line 93: rating = visual.RatingScale(win=win, name='rating', marker=u'triangle', size=1.0, pos=[0.0, -0.4], low=0, high=1000, 
+                                     labels=[u'0', u'1000'], scale=u'', tickHeight=0, showValue=False)
+line 196: this_num = str(random.randint(0, 1000))
+line 204: text.setText((this_num), log=False)
+I think that's it!
+"""
 
 from __future__ import absolute_import, division
 from psychopy import locale_setup, sound, gui, visual, core, data, event, logging, clock
